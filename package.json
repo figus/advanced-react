@@ -8,30 +8,32 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "pm2 start lib/server.js --watch --interpreter babel-node"
+    "dev": "pm2 start lib/server.js --watch --interpreter babel-node",
+    "webpack": "webpack -wd"
   },
   "babel": {
-    "presets": [
-      "react",
-      "env",
-      "stage-2"
-    ]
+    "presets": ["react", "env", "stage-2"]
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "babel-eslint": "^8.2.3",
     "eslint": "^4.19.1",
-    "eslint-plugin-react": "^7.8.2"
+    "eslint-plugin-react": "^7.8.2",
+    "webpack-cli": "^2.1.4"
   },
   "dependencies": {
     "add": "^2.0.6",
     "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
-    "pm2": "^2.10.4"
+    "pm2": "^2.10.4",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "webpack": "^4.9.1"
   }
 }
