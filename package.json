@@ -12,7 +12,11 @@
     "webpack": "webpack -wd"
   },
   "babel": {
-    "presets": ["react", "env", "stage-2"]
+    "presets": [
+      "react",
+      "env",
+      "stage-2"
+    ]
   },
   "author": "",
   "license": "ISC",
@@ -26,6 +30,7 @@
     "add": "^2.0.6",
     "babel-cli": "^6.26.0",
     "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
