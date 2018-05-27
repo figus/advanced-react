@@ -19,6 +19,7 @@ module.exports = {
   plugins: ['react'], // Instalarlos con npm, prefix: eslint-plugin-
   rules: {
     // off: 0, warn: 1, error: 2
+    'arrow-parens': ['warn'],
     'react/prop-types': ['off'], // Especificar Prop Types en los componentes de react
     indent: ['error', 2], // Tamaño de la identación (espacios)
     'linebreak-style': ['error', 'unix'], // Tipo de cambio de línea
