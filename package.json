@@ -12,13 +12,9 @@
     "webpack": "webpack -wd"
   },
   "babel": {
-    "presets": [
-      "react",
-      "env",
-      "stage-2"
-    ]
+    "presets": ["react", "env", "stage-2"]
   },
-  "author": "",
+  "author": "figus",
   "license": "ISC",
   "devDependencies": {
     "babel-eslint": "^8.2.3",
