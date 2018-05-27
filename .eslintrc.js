@@ -5,7 +5,8 @@ module.exports = {
     browser: true, // ... para el navegador
     commonjs: true, // ... para Common JS y su Scoping (Sólo para codigo de navegador que usa webpack/browserify)
     es6: true, // ... activa ECMAScript 6 excepto para modulos (Activa ecmaVersion 6 en las opciones del parser)
-    node: true // ... para Node.js y su scoping
+    node: true, // ... para Node.js y su scoping
+    jest: true
   },
   extends: ['eslint:recommended', 'plugin:react/recommended'],
   parserOptions: {
