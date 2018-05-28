@@ -107,18 +107,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 
 /***/ }),
 
-/***/ "./lib/components/Index.js":
-/*!*********************************!*\
-  !*** ./lib/components/Index.js ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _App = __webpack_require__(/*! ./App */ \"./lib/components/App.js\");\n\nvar _App2 = _interopRequireDefault(_App);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n_reactDom2.default.hydrate(_react2.default.createElement(_App2.default, null), document.getElementById('root'));//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9saWIvY29tcG9uZW50cy9JbmRleC5qcy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9saWIvY29tcG9uZW50cy9JbmRleC5qcz8wZTk0Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5pbXBvcnQgUmVhY3RET00gZnJvbSAncmVhY3QtZG9tJztcblxuaW1wb3J0IEFwcCBmcm9tICcuL0FwcCc7XG5cblJlYWN0RE9NLmh5ZHJhdGUoPEFwcCAvPiwgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3Jvb3QnKSk7XG4iXSwibWFwcGluZ3MiOiI7O0FBQUE7QUFDQTs7O0FBQUE7QUFDQTs7O0FBQ0E7QUFDQTs7Ozs7QUFDQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./lib/components/Index.js\n");
-
-/***/ }),
-
 /***/ "./lib/dataApi.js":
 /*!************************!*\
   !*** ./lib/dataApi.js ***!
@@ -128,6 +116,18 @@ eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/i
 
 "use strict";
 eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar DataApi = function () {\n  function DataApi(rawData) {\n    _classCallCheck(this, DataApi);\n\n    this.rawData = rawData;\n  }\n\n  _createClass(DataApi, [{\n    key: \"mapIntoObject\",\n    value: function mapIntoObject(arr) {\n      return arr.reduce(function (acc, curr) {\n        acc[curr.id] = curr;\n        return acc;\n      }, {});\n    }\n  }, {\n    key: \"getArticles\",\n    value: function getArticles() {\n      return this.mapIntoObject(this.rawData.articles);\n    }\n  }, {\n    key: \"getAuthors\",\n    value: function getAuthors() {\n      return this.mapIntoObject(this.rawData.authors);\n    }\n  }]);\n\n  return DataApi;\n}();\n\nexports.default = DataApi;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9saWIvZGF0YUFwaS5qcy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9saWIvZGF0YUFwaS5qcz9lMDA5Il0sInNvdXJjZXNDb250ZW50IjpbImNsYXNzIERhdGFBcGkge1xuICBjb25zdHJ1Y3RvcihyYXdEYXRhKSB7XG4gICAgdGhpcy5yYXdEYXRhID0gcmF3RGF0YTtcbiAgfVxuXG4gIG1hcEludG9PYmplY3QoYXJyKSB7XG4gICAgcmV0dXJuIGFyci5yZWR1Y2UoKGFjYywgY3VycikgPT4ge1xuICAgICAgYWNjW2N1cnIuaWRdID0gY3VycjtcbiAgICAgIHJldHVybiBhY2M7XG4gICAgfSwge30pO1xuICB9XG5cbiAgZ2V0QXJ0aWNsZXMoKSB7XG4gICAgcmV0dXJuIHRoaXMubWFwSW50b09iamVjdCh0aGlzLnJhd0RhdGEuYXJ0aWNsZXMpO1xuICB9XG5cbiAgZ2V0QXV0aG9ycygpIHtcbiAgICByZXR1cm4gdGhpcy5tYXBJbnRvT2JqZWN0KHRoaXMucmF3RGF0YS5hdXRob3JzKTtcbiAgfVxufVxuXG5leHBvcnQgZGVmYXVsdCBEYXRhQXBpO1xuIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7O0FBQUE7QUFDQTtBQUFBO0FBQ0E7QUFBQTtBQUNBO0FBQ0E7OztBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7O0FBRUE7QUFDQTtBQUNBOzs7QUFFQTtBQUNBO0FBQ0E7Ozs7OztBQUdBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./lib/dataApi.js\n");
+
+/***/ }),
+
+/***/ "./lib/renderers/dom.js":
+/*!******************************!*\
+  !*** ./lib/renderers/dom.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _App = __webpack_require__(/*! ./../components/App */ \"./lib/components/App.js\");\n\nvar _App2 = _interopRequireDefault(_App);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n_reactDom2.default.hydrate(_react2.default.createElement(_App2.default, null), document.getElementById('root'));//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9saWIvcmVuZGVyZXJzL2RvbS5qcy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9saWIvcmVuZGVyZXJzL2RvbS5qcz9mYmYzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5pbXBvcnQgUmVhY3RET00gZnJvbSAncmVhY3QtZG9tJztcblxuaW1wb3J0IEFwcCBmcm9tICcuLy4uL2NvbXBvbmVudHMvQXBwJztcblxuUmVhY3RET00uaHlkcmF0ZSg8QXBwIC8+LCBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgncm9vdCcpKTtcbiJdLCJtYXBwaW5ncyI6Ijs7QUFBQTtBQUNBOzs7QUFBQTtBQUNBOzs7QUFDQTtBQUNBOzs7OztBQUNBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./lib/renderers/dom.js\n");
 
 /***/ }),
 
@@ -4084,14 +4084,14 @@ eval("var g;\r\n\r\n// This works in non-strict mode\r\ng = (function() {\r\n\tr
 /***/ }),
 
 /***/ 0:
-/*!******************************************************!*\
-  !*** multi babel-polyfill ./lib/components/Index.js ***!
-  \******************************************************/
+/*!***************************************************!*\
+  !*** multi babel-polyfill ./lib/renderers/dom.js ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! babel-polyfill */"./node_modules/babel-polyfill/lib/index.js");
-module.exports = __webpack_require__(/*! ./lib/components/Index.js */"./lib/components/Index.js");
+module.exports = __webpack_require__(/*! ./lib/renderers/dom.js */"./lib/renderers/dom.js");
 
 
 /***/ })
